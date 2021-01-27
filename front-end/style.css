@@ -1,0 +1,87 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #34495e;
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #191919;
+  text-align: center;
+  box-sizing: content-box;
+}
+.box h1{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.box h2{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1em;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #2ecc71;
+}
+.box input[type = "submit"], .box input[type = "button"]{
+  border:0;
+  background: none;
+  display: inline-block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #2ecc71;
+}
+
+/* My CSS */
+
+.box section > input[type = "checkbox"], .box section > input[type = "radio"] {
+  height: 0;
+  width: 0;
+
+}
+.box section > input[type = "checkbox"] + label, .box section > input[type = "radio"] + label {
+  border: 2px dashed #3498db;
+  border-radius: 24px;
+  display: inline-block;
+  padding: 8px 10px;
+  transition: 0.25s;
+  margin: 5px;
+  color: #636e72;
+}
+
+.box section > input[type = "checkbox"]:checked + label, .box section > input[type = "radio"]:checked + label{
+  border: 2px solid #6c5ce7;
+  /* margin: 150px 0px; */
+
+}
